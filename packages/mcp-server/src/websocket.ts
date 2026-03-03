@@ -21,6 +21,7 @@ interface PendingRequest {
 }
 
 const DEFAULT_TIMEOUT_MS = 30_000;
+const BATCH_TIMEOUT_MS = 60_000;
 
 export class FigmaBridge {
   private wss: WebSocketServer;
