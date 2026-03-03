@@ -1,0 +1,12 @@
+{
+  "name": "Cursor Bridge",
+  "id": "cursor-bridge-plugin",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma"],
+  "networkAccess": {
+    "allowedDomains": ["http://localhost", "ws://localhost:9100"],
+    "reasoning": "Connects to local MCP bridge server via WebSocket for AI-driven design commands"
+  }
+}

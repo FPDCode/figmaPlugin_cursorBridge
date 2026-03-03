@@ -1,0 +1,15 @@
+{
+  "name": "cursor-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:plugin": "npm run build -w packages/figma-plugin",
+    "build:server": "npm run build -w packages/mcp-server",
+    "dev:plugin": "npm run watch -w packages/figma-plugin",
+    "dev:server": "npm run dev -w packages/mcp-server"
+  }
+}
